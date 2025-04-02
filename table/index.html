@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Multiplication Table Generator ✨</h1>
+        <div class="input-group">
+            <label for="number">Enter a number:</label>
+            <input type="number" id="number" min="1" placeholder="type a number">
+            <button onclick="generateTable()">Generate Table</button>
+        </div>
+        <div id="tableContainer" class="table-container"></div>
+    </div>
+
+    <!-- Modal for error message -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Please enter a number greater than 0.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
